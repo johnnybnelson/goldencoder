@@ -1,71 +1,154 @@
-# Getting Started with Create React App
+# The Goals of This Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This material was covered in the videos you have been pointed to and within the wiki
 
-## Available Scripts
+You will set up a skeleton of page/application where you will be building an application and developing your skills as a developer
 
-In the project directory, you can run:
+### Extensions
 
-### `npm start`
+Recommended Extensions are actually required.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Commands to Get Started Examples
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+These are the command example that you would need to run out of the terminal to get your react application up and running.
 
-### `npm test`
+#### Yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+From within the folder that contains the `package.json` file.
 
-### `npm run build`
+```bash
+yarn install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then you execute:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install Sabio Module
 
-### `npm run eject`
+From Bash window run the following command
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install sabio -g
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+or
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+yarn run sabio
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##### Back Up Your Work
 
-## Learn More
+To safely back up your work to GitHub repository you can run the following command from within the terminal.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can do this any time.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The first time you do this, you will be prompted for some information.
 
-### Code Splitting
+> If this fails the first time you do this, be sure to bring this up to an instructor the NEXT time you get on the Q. ( Not now, but the _NEXT_ time you get on the Q)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+yarn run share
+```
 
-### Analyzing the Bundle Size
+This "share" command is actually running our "sabio" module with the "share branch" command. This is that command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+sabio -sb
+```
 
-### Making a Progressive Web App
+This command will save a copy of your code on our GitHub account so you can share or backup you code. You can/should do this every day.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Already Installed Into This Application
 
-### Advanced Configuration
+The following modules are already installed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### bootstrap
 
-### Deployment
+- https://getbootstrap.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This module provide the HTML/CSS and JS Framework that drive the foundational aspects of the UI.
 
-### `npm run build` fails to minify
+##### reactstrap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# seniorcitizencoders
+This is a React wrapper for Boostrap. It is optional to use this and we recommend you use bootstrap directly when possible.
+
+##### axios
+
+This library is used to make Ajax requests to a server.
+
+##### react-router
+
+The module we use to make client side routing possible
+
+##### toastr
+
+- https://github.com/CodeSeven/toastr
+
+This is to be used to provide informational messages to the user. For example in the following situations:
+
+- "You have logged in successfully"
+- "You have created a record"
+- "You have uploaded a file"
+
+##### sweetalert
+
+- https://sweetalert.js.org/guides/#using-with-libraries
+
+Alerts are very obtrusive so they should not be used every time you want to provide feedback to a user. Instead use them when you want to confirm the user wants to perform an action or when you want to give a user a choice of actions.
+
+A great example is when a user clicks a "Delete" button. Instead of just moving forward with a delete operation, "Alert" them to confirm that they DO, in fact, want to _DELETE_ the record.
+
+##### rc-pagination
+
+- https://github.com/react-component/pagination
+
+This tool provide for you a ready to use component to draw a pagination tool to use to navigation from page to page, go "next" and "previous". **_Read more_ below.**
+
+##### Using rc-pagintation
+
+Once you are ready to do pagination in React you should use the library installed already called rc-pagination.
+
+For more on using this go to he documentation:
+
+- https://github.com/react-component/pagination
+
+_It is very important that you import the css file to use this library_
+
+To import the css file add to the top of the component:
+
+```javascript
+import "rc-pagination/assets/index.css";
+import locale from "rc-pagination/lib/locale/en_US";
+```
+
+Here is stubbed out snippet where you still have to proivde much of the logic. Be sure to look at the documention so that you can determine what other properties you need to use.
+
+````javascript
+export default class App extends React.Component {
+  state = {
+    current: 3,
+  };
+
+  onChange = page => {
+    console.log(page);
+    this.setState({
+      current: page,
+    });
+  };
+
+  render() {
+    return (
+      <Pagination
+        onChange={this.onChange}
+        current={this.state.current}
+        total={25}
+        locale={locale}
+      />
+    );
+  }
+}```
+````

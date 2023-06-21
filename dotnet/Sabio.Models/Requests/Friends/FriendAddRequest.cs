@@ -6,7 +6,7 @@ namespace Sabio.Models.Requests.Friends
     public class FriendAddRequest
     {
         [Required]   
-        [StringLength(120)]  /
+        [StringLength(120)]  
         public string Title { get; set; }
 
         [Required]  
