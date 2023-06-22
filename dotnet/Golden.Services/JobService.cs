@@ -1,9 +1,9 @@
-﻿using Sabio.Data.Providers;
-using Sabio.Models.Domain.Contacts;
-using Sabio.Models.Domain.Friends;
-using Sabio.Models.Domain.Tags;
-using Sabio.Models.Domain.TechCompanies;
-using Sabio.Models;
+﻿using Golden.Data.Providers;
+using Golden.Models.Domain.Contacts;
+using Golden.Models.Domain.Friends;
+using Golden.Models.Domain.Tags;
+using Golden.Models.Domain.TechCompanies;
+using Golden.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -11,12 +11,14 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sabio.Models.Domain.Jobs;
-using Sabio.Data;
-using Sabio.Models.Domain.Skills;
-using Sabio.Models.Requests.Friends;
-using Sabio.Models.Requests.Jobs;
+using Golden.Models.Domain.Jobs;
+using Golden.Data;
+using Golden.Models.Domain.Skills;
+using Golden.Models.Requests.Friends;
+using Golden.Models.Requests.Jobs;
 using Golden.Services.Interfaces;
+using Golden.Data.Interfaces;
+using Golden.Data.Extensions;
 
 namespace Golden.Services
 {

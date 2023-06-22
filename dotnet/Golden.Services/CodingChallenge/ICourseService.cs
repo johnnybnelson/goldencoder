@@ -1,6 +1,6 @@
-﻿using Sabio.Models;
-using Sabio.Models.Domain.CodingChallenge.Domain;
-using Sabio.Models.Domain.CodingChallenge.Requests;
+﻿using Golden.Models;
+using Golden.Models.Domain.CodingChallenge.Domain;
+using Golden.Models.Domain.CodingChallenge.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;

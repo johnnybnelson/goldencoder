@@ -1,6 +1,6 @@
-﻿using Sabio.Models;
-using Sabio.Models.Domain.TechCompanies;
-using Sabio.Models.Requests.TechCompanies;
+﻿using Golden.Models;
+using Golden.Models.Domain.TechCompanies;
+using Golden.Models.Requests.TechCompanies;
 
 
 namespace Golden.Services.Interfaces

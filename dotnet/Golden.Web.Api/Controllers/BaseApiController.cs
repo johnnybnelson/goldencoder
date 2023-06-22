@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Golden.Web.Models.Interfaces;
+using Golden.Web.Models.Responses;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Sabio.Web.Models;
-using Sabio.Web.Models.Responses;
 using System.Net;
 
-namespace Golden.Web.Controllers
+namespace Golden.Web.Api.Controllers
 {
     [ApiController]
     public abstract class BaseApiController : ControllerBase
@@ -12,7 +12,7 @@ namespace Golden.Web.Controllers
         protected ILogger Logger { get; set; }
         public BaseApiController(ILogger logger)
         {
-            logger.LogInformation($"Controller Firing {this.GetType().Name} ");
+            logger.LogInformation($"Controller Firing {GetType().Name} ");
             Logger = logger;
         }
 

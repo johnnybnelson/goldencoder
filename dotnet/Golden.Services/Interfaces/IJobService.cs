@@ -1,11 +1,11 @@
-﻿using Sabio.Models.Domain.Jobs;
-using Sabio.Models;
+﻿using Golden.Models.Domain.Jobs;
+using Golden.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sabio.Models.Requests.Jobs;
+using Golden.Models.Requests.Jobs;
 
 namespace Golden.Services.Interfaces
 {

@@ -1,4 +1,5 @@
-﻿using Sabio.Models;
+﻿using Golden.Models;
+using Golden.Models.Enums;
 
 namespace Golden.Services.Interfaces.Security
 {

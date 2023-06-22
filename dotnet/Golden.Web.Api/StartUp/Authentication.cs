@@ -1,16 +1,16 @@
-﻿using Microsoft.AspNetCore.Authentication;
+﻿using Golden.Web.Core.Configs;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Sabio.Web.Core;
 using System;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Golden.Web.StartUp
+namespace Golden.Web.Api.StartUp
 {
     public class Authentication
     {
@@ -58,7 +58,7 @@ namespace Golden.Web.StartUp
             {
                 options.Cookie = cookie;
                 options.SlidingExpiration = true;
-                options.TicketDataFormat = new Golden.Web.Core.Services.TokenSecureDataFormat(jsonWebTokenConfig);
+                options.TicketDataFormat = new Core.Services.TokenSecureDataFormat(jsonWebTokenConfig);
                 options.AccessDeniedPath = "/unauthorized";
                 options.LoginPath = "/login";
                 options.LogoutPath = "/logout";

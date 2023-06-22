@@ -1,8 +1,10 @@
-﻿using Sabio.Models;
+﻿using Golden.Models;
+using Golden.Models.Interfaces;
+using Golden.Services.Interfaces.Security;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace Golden.Services.Interfaces.Security
+namespace Golden.Services
 {
     /// <summary>
     /// Provides basic functionality for Authentication, Authorization and access to App Customized

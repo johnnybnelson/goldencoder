@@ -1,5 +1,5 @@
-﻿using Sabio.Models.Domain.Users;
-using Sabio.Models.Requests.Users;
+﻿using Golden.Models.Domain.Users;
+using Golden.Models.Requests.Users;
 using System.Threading.Tasks;
 
 namespace Golden.Services.Interfaces

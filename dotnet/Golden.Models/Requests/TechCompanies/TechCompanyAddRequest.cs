@@ -1,8 +1,8 @@
 ﻿using Golden.Models.Domain.Images;
 using Golden.Models.Domain.Urls;
-using Sabio.Models.Domain.Contacts;
-using Sabio.Models.Domain.Friends;
-using Sabio.Models.Domain.Tags;
+using Golden.Models.Domain.Contacts;
+using Golden.Models.Domain.Friends;
+using Golden.Models.Domain.Tags;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

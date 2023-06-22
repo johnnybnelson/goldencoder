@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Golden.Web.Core;
 using Golden.Web.Api.StartUp;
+using Golden.Web.Core.Configs;
 
 namespace Golden.Web.Api
 {

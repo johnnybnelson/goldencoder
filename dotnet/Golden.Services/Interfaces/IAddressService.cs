@@ -1,5 +1,5 @@
-﻿using Sabio.Models.Domain.Addresses;
-using Sabio.Models.Requests.Addresses;
+﻿using Golden.Models.Domain.Addresses;
+using Golden.Models.Requests.Addresses;
 using System.Collections.Generic;
 
 namespace Golden.Services.Interfaces

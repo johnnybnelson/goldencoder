@@ -6,6 +6,8 @@ using Golden.Models.Requests;
 using Golden.Services;
 using Golden.Web.Models.Responses;
 using System.Collections.Generic;
+using Golden.Services.Interfaces.Security;
+using Golden.Services.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

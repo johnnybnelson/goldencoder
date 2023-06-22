@@ -4,7 +4,7 @@ namespace Golden.Services.Security
 {
     public static class ClaimsIdentityExt
     {
-        public static string TENANTID = "Sabio.TenantId";
+        public static string TENANTID = "Golden.TenantId";
 
         public static void AddTenantId(this ClaimsIdentity claims, object tenantId)
         {

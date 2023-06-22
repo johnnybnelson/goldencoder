@@ -10,6 +10,9 @@ using Golden.Services.Interfaces;
 using Golden.Web.Api.Controllers;
 using Golden.Web.Core.Services;
 using System;
+using Golden.Services.Interfaces.Security;
+using Golden.Data.Providers;
+using Golden.Data.Interfaces;
 
 namespace Golden.Web.Api.StartUp
 {
@@ -37,7 +40,7 @@ namespace Golden.Web.Api.StartUp
 
             services.AddSingleton<IAuthenticationService<int>, WebAuthenticationService>();
 
-            services.AddSingleton<Data.Providers.IDataProvider, SqlDataProvider>(delegate (IServiceProvider provider)
+            services.AddSingleton<IDataProvider, SqlDataProvider>(delegate (IServiceProvider provider)
             {
                 return new SqlDataProvider(connString);
             }

@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Sabio.Models;
-using Sabio.Services;
+using Golden.Models;
+using Golden.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Golden.Services.Interfaces.Security;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Core.Filters
 {

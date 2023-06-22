@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Golden.Services;
 using Golden.Services.Interfaces;
 using Golden.Web.Models.Responses;
 using System.Collections.Generic;
@@ -10,7 +8,8 @@ using System;
 using Golden.Models.Domain.Friends;
 using Golden.Models.Requests.Friends;
 using Golden.Models;
-
+using Golden.Models.Interfaces;
+using Golden.Services;
 
 namespace Golden.Web.Api.Controllers
 {

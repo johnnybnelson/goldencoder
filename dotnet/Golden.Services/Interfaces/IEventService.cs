@@ -1,6 +1,6 @@
-﻿using Sabio.Models;
-using Sabio.Models.Domain.Events;
-using Sabio.Models.Requests.Events;
+﻿using Golden.Models;
+using Golden.Models.Domain.Events;
+using Golden.Models.Requests.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;

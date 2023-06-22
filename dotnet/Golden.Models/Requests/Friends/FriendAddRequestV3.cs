@@ -1,5 +1,5 @@
-﻿//using Sabio.Models.Domain.Images;
-//using Sabio.Models.Domain.Skills;
+﻿//using Golden.Models.Domain.Images;
+//using Golden.Models.Domain.Skills;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

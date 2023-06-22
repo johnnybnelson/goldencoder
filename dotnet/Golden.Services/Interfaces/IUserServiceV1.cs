@@ -1,6 +1,6 @@
-﻿using Sabio.Models;
-using Sabio.Models.Domain.Users;
-using Sabio.Models.Requests.Users;
+﻿using Golden.Models;
+using Golden.Models.Domain.Users;
+using Golden.Models.Requests.Users;
 using System.Collections.Generic;
 
 namespace Golden.Services.Interfaces

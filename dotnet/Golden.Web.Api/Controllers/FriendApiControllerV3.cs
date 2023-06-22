@@ -10,6 +10,8 @@ using Golden.Services.Interfaces;
 using Golden.Services;
 using Golden.Models;
 using Golden.Models.Requests.Friends;
+using Golden.Services.Interfaces.Security;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Api.Controllers
 {

@@ -1,4 +1,4 @@
-﻿using Sabio.Models.Domain.Skills;
+﻿using Golden.Models.Domain.Skills;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

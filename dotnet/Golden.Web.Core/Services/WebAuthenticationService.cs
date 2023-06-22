@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
-using Sabio.Models;
-using Sabio.Models.Domain;
-using Sabio.Services.Security;
+using Golden.Models.Domain;
+using Golden.Services.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +10,11 @@ using System.Reflection;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Core.Services
 {
-    public class WebAuthenticationService : Sabio.Services.IAuthenticationService<int>
+    public class WebAuthenticationService : Golden.Services.IAuthenticationService<int>
     {
         private static string _title = null;
         private IHttpContextAccessor _contextAccessor;
@@ -90,7 +90,7 @@ namespace Golden.Web.Core.Services
 
         public IUserAuthData GetCurrentUser()
         {
-            Sabio.Models.Domain.UserBase baseUser = null;
+            Golden.Models.Domain.UserBase baseUser = null;
 
             if (IsLoggedIn())
             {
@@ -107,7 +107,7 @@ namespace Golden.Web.Core.Services
 
         private static UserBase ExtractUser(ClaimsIdentity identity)
         {
-            Sabio.Models.Domain.UserBase baseUser = new UserBase();
+            Golden.Models.Domain.UserBase baseUser = new UserBase();
             List<string> roles = null;
 
             foreach (var claim in identity.Claims)

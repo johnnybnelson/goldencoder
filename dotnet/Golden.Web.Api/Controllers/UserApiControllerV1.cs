@@ -12,6 +12,8 @@ using Golden.Models.Requests.Users;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using System.Text.RegularExpressions;
+using Golden.Services.Interfaces.Security;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Api.Controllers
 {

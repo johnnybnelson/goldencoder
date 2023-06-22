@@ -1,14 +1,16 @@
-﻿using Sabio.Data.Providers;
-using Sabio.Models.Domain.Friends;
+﻿using Golden.Data.Providers;
+using Golden.Models.Domain.Friends;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using Sabio.Data;
-using Sabio.Models.Requests.Friends;
-//using Sabio.Models.Domain.Users;
-using Sabio.Models;
-using Sabio.Models.Domain.Skills;
+using Golden.Data;
+using Golden.Models.Requests.Friends;
+//using Golden.Models.Domain.Users;
+using Golden.Models;
+using Golden.Models.Domain.Skills;
 using Golden.Services.Interfaces;
+using Golden.Data.Interfaces;
+using Golden.Data.Extensions;
 //using System;
 
 namespace Golden.Services

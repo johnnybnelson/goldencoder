@@ -11,6 +11,8 @@ using System;
 using Golden.Models.Domain.TechCompanies;
 using Golden.Models.Requests.Friends;
 using Golden.Models.Requests.TechCompanies;
+using Golden.Services.Interfaces.Security;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Api.Controllers
 {

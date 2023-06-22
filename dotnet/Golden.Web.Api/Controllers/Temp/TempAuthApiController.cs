@@ -9,6 +9,10 @@ using Golden.Web.Core;
 using Golden.Web.Models.Responses;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Golden.Services.Interfaces;
+using Golden.Services.Interfaces.Security;
+using Golden.Web.Core.Configs;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Api.Controllers.Temp
 {

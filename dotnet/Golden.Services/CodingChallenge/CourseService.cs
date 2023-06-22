@@ -1,5 +1,5 @@
-﻿using Sabio.Data.Providers;
-using Sabio.Models.Requests.Jobs;
+﻿using Golden.Data.Providers;
+using Golden.Models.Requests.Jobs;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -8,13 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using Sabio.Models.Domain.CodingChallenge.Requests;
-using Sabio.Data;
-using Sabio.Models.Domain.Jobs;
-using Sabio.Models.Domain.Skills;
-using Sabio.Models.Domain.TechCompanies;
-using Sabio.Models.Domain.CodingChallenge.Domain;
-using Sabio.Models;
+using Golden.Models.Domain.CodingChallenge.Requests;
+using Golden.Data;
+using Golden.Models.Domain.Jobs;
+using Golden.Models.Domain.Skills;
+using Golden.Models.Domain.TechCompanies;
+using Golden.Models.Domain.CodingChallenge.Domain;
+using Golden.Models;
+using Golden.Data.Interfaces;
+using Golden.Data.Extensions;
 
 namespace Golden.Services.CodingChallenge
 {

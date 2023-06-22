@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Golden.Services.Interfaces;
 using Golden.Services;
+using Golden.Services.Interfaces.Security;
 
 namespace Golden.Web.Api.Controllers
 {

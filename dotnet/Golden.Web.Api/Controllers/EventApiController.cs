@@ -15,6 +15,8 @@ using Golden.Models.Requests.Events;
 using Golden.Models.Requests.Jobs;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Golden.Models.Domain.TechCompanies;
+using Golden.Services.Interfaces.Security;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Api.Controllers
 {

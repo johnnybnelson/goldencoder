@@ -1,5 +1,5 @@
-﻿using Sabio.Models.Domain.Skills;
-using Sabio.Models.Domain.Users;
+﻿using Golden.Models.Domain.Skills;
+using Golden.Models.Domain.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;

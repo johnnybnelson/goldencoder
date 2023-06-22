@@ -11,6 +11,8 @@ using Golden.Models.Requests.Jobs;
 using Golden.Models.Domain.CodingChallenge.Domain;
 using Golden.Models.Domain.CodingChallenge.Requests;
 using Golden.Services.CodingChallenge;
+using Golden.Services.Interfaces.Security;
+using Golden.Models.Interfaces;
 
 namespace Golden.Web.Api.Controllers.CodingChallenge
 {
