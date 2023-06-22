@@ -8,7 +8,7 @@ namespace Golden.Services.Security
 
         public static void AddTenantId(this ClaimsIdentity claims, object tenantId)
         {
-            claims.AddClaim(new Claim(TENANTID, tenantId?.ToString(), null, "Sabio"));
+            claims.AddClaim(new Claim(TENANTID, tenantId?.ToString(), null, "Golden"));
         }
 
         public static bool IsTenantIdClaim(this ClaimsIdentity claims, string claimName)

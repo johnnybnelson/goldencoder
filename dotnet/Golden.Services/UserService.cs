@@ -126,7 +126,7 @@ namespace Golden.Services
                 TenantId = "Acme Corp UId"
             };
 
-            Claim fullName = new Claim("CustomClaim", "Sabio Bootcamp");
+            Claim fullName = new Claim("CustomClaim", "Golden");
             await _authenticationService.LogInAsync(response, new Claim[] { fullName });
 
             return isSuccessful;

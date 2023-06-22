@@ -14,7 +14,7 @@ namespace Golden.Web.Models.Responses
 
         public BaseResponse()
         {
-            //Sabio: This TxId we are just faking to demo the purpose
+            //golden: This TxId we are just faking to demo the purpose
             TransactionId = Guid.NewGuid().ToString();
         }
     }

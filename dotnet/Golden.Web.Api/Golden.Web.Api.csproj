@@ -1,20 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-	  <TargetFramework>net7.0</TargetFramework>
-    <UserSecretsId>Sabio-Web-E43F2A1C-FED9-410C-B432-08341FD13E2B</UserSecretsId>
-    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <SpaRoot>ClientApp\</SpaRoot>
-    <NodeRoot>node-api\</NodeRoot>
-    <Authors>Gregorio Rojas</Authors>
-    <Company>Sabio Enterprises</Company>
-    <Product>Sabio Api Application</Product>
-    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**;$(NodeRoot)node_modules\**</DefaultItemExcludes>
-    <AssemblyName>Golden.Web.Api</AssemblyName>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 
-  </PropertyGroup>
   <PropertyGroup>
      <TargetFramework>net7.0</TargetFramework>
     <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
