@@ -36,10 +36,7 @@ namespace Golden.Services
 
         public User Login(UserLogin user)
         {
-            //int userId = 0;
-
             string procName = "[dbo].[Users_Login]";
-
 
             User thisUser = null;
 

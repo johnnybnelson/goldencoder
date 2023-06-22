@@ -27,7 +27,7 @@ namespace Golden.Services
         {
             Address address = null;
 
-            string procName = "[dbo].[Sabio_Addresses_SelectById]";
+            string procName = "[dbo].[golden_Addresses_SelectById]";
 
             _data.ExecuteCmd(procName, delegate (SqlParameterCollection paramCollection)
             {
@@ -52,7 +52,7 @@ namespace Golden.Services
         {
             List<Address> addressList = null;
 
-            string procName = "[dbo].[Sabio_Addresses_SelectRandom50]";
+            string procName = "[dbo].[golden_Addresses_SelectRandom50]";
 
             _data.ExecuteCmd(procName, null,
 
@@ -99,7 +99,7 @@ namespace Golden.Services
 
             int id = 0;
 
-            string procName = "[dbo].[Sabio_Addresses_Insert]";
+            string procName = "[dbo].[golden_Addresses_Insert]";
             _data.ExecuteNonQuery(procName, inputParamMapper: delegate (SqlParameterCollection paramCollection)
             {
                 AddCommonParams(newAddress, paramCollection);
@@ -143,7 +143,7 @@ namespace Golden.Services
         public void Update(AddressUpdateRequest updateAddress, int userId)
         {
 
-            string procName = "[dbo].[Sabio_Addresses_Update]";
+            string procName = "[dbo].[golden_Addresses_Update]";
             _data.ExecuteNonQuery(procName, inputParamMapper: delegate (SqlParameterCollection paramCollection)
             {
 
@@ -158,7 +158,7 @@ namespace Golden.Services
         public void Delete(int deleteId)
         {
 
-            string procName = "[dbo].[Sabio_Addresses_DeleteById]";
+            string procName = "[dbo].[golden_Addresses_DeleteById]";
             _data.ExecuteNonQuery(procName, inputParamMapper: delegate (SqlParameterCollection paramCollection)
             {
 
